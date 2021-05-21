@@ -31,17 +31,17 @@ body{
     
 }
 .col:nth-child(1){
-    background: orange;
+    background: #FF9545;
 
 }
 
 .col:nth-child(2){
-    background: #f18684;
+    background: #A5FF52;
 
 }
 
 .col:nth-child(3){
-    background: #6ee2f1;
+    background: #63C498;
 
 }
 h2{

@@ -14,7 +14,7 @@
                 var conpass= document.getElementById("five").value;
                 var contact= document.getElementById("six").value;
                
-
+            
                 console.log(name);
                 console.log(username);
                 console.log(contact);
@@ -25,6 +25,7 @@
                 let regEx2 = /^[0-9]{11}$/
                 
              
+
                 if(name=='')
                 {
                         alert('Enter your name');
@@ -63,6 +64,7 @@
                         alert ('Password max length is 32');
                 }
                 
+                
                 else if(contact=='')
                 {
                         alert('Please enter your contact number');
@@ -89,7 +91,7 @@
   </script>
 <head>
 
-<title > Student Management System </title>
+<title > Register </title>
 
 
 <link rel= "stylesheet" href ="css/formvalidation.css">
@@ -110,16 +112,16 @@
 </li>
 <li><a> Library </a>
 <ul>
-         
+        
+        <li><a>Live Book</a></li>
         <li><a>Bangla Book</a></li>
-        <li><a>English Book</a></li>
         <li><a>Religious Book</a></li>
 
     </ul>
 
 </li>
 <li><a> Scholarship </a></li>
-<li><a> Academic </a></li>
+<li><a> Galary</a></li>
 <li><a> Home </a></li>
 
 </ul>
@@ -130,7 +132,9 @@
     <center><h1>Registrations</h1></center>
 		
       <center>
+                
 
+          
           <h4>Register Here</h4>
        
         
@@ -163,10 +167,7 @@
         <tr>
         <td >
 
-                  
-                Password :
-        
-        
+                  Password :
         </td>
         <td>
            
@@ -188,27 +189,6 @@
         </td>
         </tr>
         
-        
-        
-        <tr>
-        <td >
-                  Academic Year :      
-        </td>
-        <td>
-                      
-                      <input type="checkbox" id = "eight" name="1st" value="1st">
-                      <label for="1st">1st</label>
-                      
-                      <input type="checkbox" id = "eight" name="2nd" value="2nd">
-                      <label for="2nd">2nd</label>
-                      
-                      <input type="checkbox" id = "eight" name="3rd" value="3rd">
-                      <label for="3rd">3rd</label>
-
-                      <input type="checkbox" id = "eight" name="4th" value="4th">
-                      <label for="4th">4th</label>
-        </td>
-        </tr>
         
         <tr>
         <td >
@@ -243,7 +223,10 @@
         <input type="submit" value="Submit"  onclick="form_valid()" ></td>
         </tr>
         </table>
+        
+        
         </div>
+
             </center>
 	</div>
 
