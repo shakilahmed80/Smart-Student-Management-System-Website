@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <html>
 
+<script>
+  
+  
+  function login_valid()
+        {
+     
+                var username= document.getElementById("one").value;
+                var password= document.getElementById("two").value;                   
+             
+            
+               
+                console.log(username);
+                
+                
 
+                
+                let regEx1 = /^[A-Za-z]+$/;
+               
+                if(username=='')
+                {
+                        alert('Enter the user name.');
+                }
+                
+                else if(!regEx1.test(username))
+                {
+                        alert('Name can not contain whitespace');
+                }
+                
+                else if(password=='')
+                {
+                        alert('Please enter Password');
+                }
+                
+                else
+                {                                                           
+               alert('Login Successful :) ');
+                            
+                }
+        }
+        
 
+  </script>
 <head>
-	<title>Login </title>
-	<link rel="stylesheet" type="text/css" href="css/login.css">
+
+<title > Login </title>
+
+
+<link rel= "stylesheet" href ="css/login.css">
 
 </head>
 <body>
-	
 
-<ul>
+    <ul>
   
 <li><a> Contact Us </a></li>
-<li><a> Information </a>
-    <ul>
-         
-        <li><a>Student Info</a></li>
-        <li><a>Teacher Info</a></li>
 
-    </ul>
-</li>
+
+        <li><a>Faculty Info</a></li>
+
 <li><a> Library </a>
 <ul>
         
-        <li><a>Live Book</a></li>
         <li><a>Bangla Book</a></li>
         <li><a>Religious Book</a></li>
 
@@ -33,12 +70,13 @@
 
 </li>
 <li><a> Scholarship </a></li>
-<li><a> Galary </a></li>
+<li><a> Gallery</a></li>
 <li><a> Home </a></li>
 
 </ul>
-    
-      <div class ="loginbox">
+
+<title>FeedBack</title>
+	 <div class ="loginbox">
 
       <img src="avatar.png" class="avatar">
 
@@ -57,7 +95,7 @@
         </td>
         <td>
 
-            <input type="text" placeholder="Enter Username here" name="username" >
+            <input type="text" placeholder="Enter Username here" name="username" id="one" >
         </td>
         </tr>
         
@@ -69,7 +107,7 @@
         </td>
         <td>
            
-            <input type="password" placeholder="Enter Password here" name="password" >
+            <input type="password" placeholder="Enter Password here" name="password" id="two" >
 
         </td>
         </tr>
@@ -79,7 +117,7 @@
         <td></td>
         <td>
         
-        <input type="submit" value="Submit"  onclick="form_valid()" ></td>
+        <input type="submit" value="Submit"  onclick="login_valid()" ></td>
         </tr>
 
         <td>
@@ -96,6 +134,7 @@
   </div>
 
      </div>
-  
+
 </body>
+ 
 </html>
