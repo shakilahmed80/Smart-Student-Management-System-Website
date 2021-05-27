@@ -24,6 +24,7 @@ body{
     display: flex;
 
 }
+
 .col{
     height: 100%;
     flex: 1;
